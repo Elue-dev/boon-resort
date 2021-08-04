@@ -1,0 +1,190 @@
+.lifestyle{
+    margin-top: 3rem;
+    h1{
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .content{
+        @include grid (repeat(auto-fit, minmax(300px, 1fr)), 1rem);
+        .life-img1{
+            position: relative;
+            background: url("../images/home2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            &::after{
+                content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    opacity: .6;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                color: #fff;
+                border: .2rem solid #fff;
+                padding: .2rem 1rem;
+            }
+        }
+
+        .life-img2{
+            position: relative;
+            background: url("../images/life2.jfif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            &::after{
+                content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    opacity: .7;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                color: #fff;
+                border: .2rem solid #fff;
+                padding: .2rem 1rem;
+            }
+        }
+
+        .life-img3{
+            position: relative;
+            background: url("../images/life3.jfif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            &::after{
+                content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    opacity: .7;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                color: #fff;
+                border: .2rem solid #fff;
+                padding: .2rem 1rem;
+            }
+        }
+
+        .life-img4{
+            position: relative;
+            background: url("../images/life4.jfif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            &::after{
+                content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    opacity: .7;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                color: #fff;
+                border: .2rem solid #fff;
+                padding: .2rem 1rem;
+            }
+        }
+
+        .life-img5{
+            position: relative;
+            background: url("../images/life5.jfif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            &::after{
+                content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    opacity: .7;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                color: #fff;
+                border: .2rem solid #fff;
+                padding: .2rem 1rem;
+            }
+        }
+
+        .life-img6{
+            position: relative;
+            background: url("../images/life6.jfif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            &::after{
+                content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: #000;
+                    opacity: .7;
+            }
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                color: #fff;
+                border: .2rem solid #fff;
+                padding: .2rem 1rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    .lifestyle {
+        margin-top: 3rem;
+    }
+}

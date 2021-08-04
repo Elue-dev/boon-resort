@@ -1,0 +1,53 @@
+.newsletter{
+    @include flexBox(space-between, row);
+    gap: 2rem;
+    margin-top: 4rem;
+    .text{
+        flex-basis: 53%;
+        p{
+            max-width: 550px;
+        }
+    }
+    .input{
+        flex-basis: 47%;
+        input{
+            padding: .6rem;
+            width: 91%;
+            margin-right: .4rem;
+            outline: none;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                border: 1px solid #081838;
+            }
+        }
+        i{
+            background: #081838;
+            color: #fff;
+            padding: .7rem;
+        }
+    }
+}
+
+
+@media (max-width:800px){
+    .newsletter{
+        .input{
+            display: flex;
+        }
+    }
+}
+
+
+@media (max-width:500px){
+    .newsletter {
+        flex-direction: column;
+    }
+    .newsletter .input input {
+        padding: .6rem 3.5rem;
+    }
+    .newsletter .input {
+        padding-top: .1rem;
+    }
+}
