@@ -60,6 +60,12 @@
     max-width: 50vw;
 }
 
+@media (max-width:1440px){
+    .about .about-row .image-row .big-img img {
+        width: 294px;
+    } 
+}
+
 
 @media (max-width:1024px){
     .about h1::after {
@@ -162,6 +168,16 @@
     }
 }
 
+@media (max-width:425px){
+    .about .about-row .image-row .small-imgs img {
+        width: 180px;
+    }
+
+    .about .about-row .image-row .big-img img {
+        width: 195px;
+    }
+}
+
 @media (max-width:414px){
     .about .about-row .image-row .big-img img {
         height: 418px;
@@ -244,9 +260,9 @@
     }
 }
 
-@media (max-width:736px) and (min-width:414px) and (orientation: landscape) {
+@media (max-width:768px) and (min-width:425px) and (orientation: landscape) {
     .about .about-row .image-row .small-imgs img {
-        width: 322px;
+        width: 353px;
     }
 
     .newsletter .input input {
