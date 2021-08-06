@@ -1,6 +1,5 @@
 .newsletter{
-    @include flexBox(space-between, row);
-    gap: 2rem;
+    @include grid (repeat(2,1fr), 0);
     margin-top: 4rem;
     .text{
         flex-basis: 53%;
@@ -9,12 +8,12 @@
         }
     }
     .input{
-        flex-basis: 47%;
         input{
             padding: .6rem;
             width: 91%;
             margin-right: .4rem;
             outline: none;
+            border: 1px solid #555;
             &:focus{
                 outline: none;
             }
@@ -30,24 +29,72 @@
     }
 }
 
+button.submit{
+    border: 1px solid #081838;
+    cursor: pointer;
+    outline: #081838;
+    &:hover, &:focus{
+        outline: #081838;
+    }
+}
+
+
+@media (max-width:1024px){
+    .newsletter {
+        gap: 2rem;
+    }
+
+    .newsletter .input input {
+        width: 89%;
+    }
+}
+
 
 @media (max-width:800px){
-    .newsletter{
-        .input{
-            display: flex;
-        }
+    // .newsletter{
+    //     .input{
+    //         display: flex;
+    //     }
+    // }
+
+    .newsletter .input input {
+        width: 86%;
+    }
+
+    .newsletter .text p {
+        max-width: auto;
     }
 }
 
 
 @media (max-width:500px){
     .newsletter {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     .newsletter .input input {
         padding: .6rem 3.5rem;
+        width: 85%;
     }
     .newsletter .input {
         padding-top: .1rem;
     }
 }
+
+@media (max-width:375px){
+    .newsletter .text p {
+        font-size: .7rem;
+    }
+
+    .newsletter .input input {
+        padding: .5rem 3.5rem;
+        width: 82%;
+        font-size: .7rem;
+    }
+
+    .newsletter .input i {
+        padding: .5rem;
+    }
+}
+
+

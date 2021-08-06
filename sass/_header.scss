@@ -34,6 +34,7 @@ nav{
                 color: #111;
                 text-decoration: none;
                 list-style: none;
+                text-transform: uppercase;
             }
         }
     }
@@ -59,7 +60,7 @@ nav{
             font-size: 2.5rem;
             word-spacing: .7rem;
         }
-        a{
+        .btn{
             color: #111;
             background: #fff;
             padding: .5rem .8rem;
@@ -67,6 +68,28 @@ nav{
             margin-right: 1.6rem;
             font-size: .7rem;
             font-weight: 600;
+            transition: word-spacing .2s ease-in-out;
+            &:hover{
+                word-spacing: .2rem;
+            }
+                i{
+                    margin-left: .9rem;
+            }
+        }
+
+        .btn2{
+            color: #fff;
+            background: transparent;
+            border: 1px solid #fff;
+            padding: .5rem .8rem;
+            text-decoration: none;
+            margin-right: 1.6rem;
+            font-size: .7rem;
+            font-weight: 600;
+            transition: word-spacing .2s ease-in-out;
+            &:hover{
+                word-spacing: .2rem;
+            }
                 i{
                     margin-left: .9rem;
             }
@@ -87,13 +110,9 @@ nav{
 
 
 @media (max-width:800px){
-    // *{
-    //     overflow-x: hidden;
-    // }
     nav{
         .hamburger{
             display: block;
-            transition: all .4s ease-in-out;
         }
         ul{
             position: absolute;
@@ -107,6 +126,8 @@ nav{
             width: 90%;
             opacity: 0;
             pointer-events: none;
+            transition: all .3s ease-in-out;
+            font-weight: 600;
             li{
                 margin: 10px 1rem;
             }
@@ -116,6 +137,9 @@ nav{
     .active{
         opacity: 1;
         pointer-events: all;
+    }
+    nav .hamburger {
+        transition: all .3s ease-in-out;
     }
 }
 
@@ -131,13 +155,16 @@ nav{
 
 @media (max-width:500px){
     .showcase{
-        height: 60vh;
+        height: 70vh;
+        margin-top: -50px;
     }
     .showcase p {
         font-size: 1.3rem;
+        margin-bottom: .5rem;
     }
     .showcase h1 {
-        font-size: 2.2rem;
+        font-size: 1.5rem;
+        text-align: center;
     }
     nav ul{
         left: 24px;
@@ -151,6 +178,15 @@ nav{
     ul.mainmenu{
         top: 53px;
     }
+    .showcase .btn {
+        padding: .5rem .4rem;
+         margin-right: .7rem; 
+        font-size: .7rem;
+    }
+    .showcase .btn2 {
+        margin: auto;
+    }
+    
 }
 
 
@@ -162,6 +198,26 @@ nav{
 
 
 @media (max-width:375px){
+    .showcase .btn, .showcase .btn2 {
+        font-size: .5rem;
+    }
+
+    .showcase h1 {
+        font-size: 1rem;
+    }
+
+    .showcase p {
+        font-size: .9rem;
+    }
+    
+    nav .logo {
+        font-size: 1rem;
+    }
+
+    nav .hamburger {
+        font-size: 1rem;
+    }
+
     nav ul{
         left: 17px;
     }

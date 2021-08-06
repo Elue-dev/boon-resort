@@ -1,8 +1,18 @@
 .lifestyle{
-    margin-top: 3rem;
+    margin-top: 6rem;
     h1{
         text-align: center;
         padding-bottom: 3rem;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            height: .3rem;
+            width: 80px;
+            background-color: #081838;
+            top: 40px;
+            left: 46.5%;
+        }
     }
     .content{
         @include grid (repeat(auto-fit, minmax(300px, 1fr)), 1rem);
@@ -183,8 +193,46 @@
 }
 
 
+@media (max-width: 1024px){
+    .lifestyle h1::after {
+        top: 43px;
+        left: 45%;
+    }
+}
+
+@media (max-width: 800px){
+    .lifestyle h1::after {
+        top: 43px;
+        left: 44%;
+    }
+    
+}
+
+
 @media (max-width: 500px){
     .lifestyle {
         margin-top: 3rem;
     }
+
+    .lifestyle h1::after {
+        top: 40px;
+        left: 38%;
+    }
 }
+
+@media (max-width: 330px){
+    .lifestyle .content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .lifestyle h1 {
+        font-size: 1.3rem;
+    }
+
+    .lifestyle h1::after {
+        top: 32px;
+        left: 39%;
+        width: 60px;
+    }
+}
+
