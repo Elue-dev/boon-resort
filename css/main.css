@@ -109,7 +109,7 @@ nav {
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: .8; }
+  opacity: .7; }
 
 @media (max-width: 800px) {
   nav .hamburger {
@@ -219,7 +219,8 @@ nav {
         object-fit: cover; }
     .about .about-row .text {
       max-width: 600px;
-      line-height: 2; }
+      line-height: 2;
+      margin-top: 1rem; }
       .about .about-row .text :first-child {
         font-weight: 600;
         margin-bottom: 2rem; }
@@ -238,7 +239,7 @@ nav {
     grid-template-columns: 1fr;
     gap: 1rem; }
   .about .about-row .image-row {
-    gap: 1rem; }
+    gap: .4rem; }
   .about .about-row .image-row .small-imgs img {
     width: 449px; }
   .about .about-row .image-row .big-img img {
@@ -264,6 +265,18 @@ nav {
     gap: .4rem;
     padding: 0; } }
 
+@media (max-width: 670px) {
+  .about .about-row .image-row .big-img img {
+    width: 278px; }
+  .about .about-row .image-row .small-imgs img {
+    width: 317px; } }
+
+@media (max-width: 540px) {
+  .about .about-row .image-row .big-img img {
+    width: 214px; }
+  .about .about-row .image-row .small-imgs img {
+    width: 266px; } }
+
 @media (max-width: 500px) {
   .about h1::after {
     top: 35px;
@@ -284,6 +297,10 @@ nav {
     width: 172px; }
   .about .about-row .image-row .big-img img {
     width: 157px; } }
+
+@media (max-width: 360px) {
+  .about .about-row .image-row .big-img img {
+    width: 143px; } }
 
 @media (max-width: 330px) {
   .about .about-row .image-row .big-img img {
@@ -306,6 +323,48 @@ nav {
     width: 119px; }
   .about .about-row .image-row .small-imgs img {
     width: 124px; } }
+
+@media (max-width: 812px) and (min-width: 375px) and (orientation: landscape) {
+  .showcase {
+    height: 100vh; }
+  .about .about-row .image-row .big-img img {
+    width: 333px; }
+  .about .about-row .image-row .small-imgs img {
+    width: 392px; }
+  .about .about-row .image-row {
+    padding: inherit; } }
+
+@media (max-width: 736px) and (min-width: 414px) and (orientation: landscape) {
+  .about .about-row .image-row .small-imgs img {
+    width: 322px; }
+  .newsletter .input input {
+    width: 83%; } }
+
+@media (max-width: 667px) and (min-width: 375px) and (orientation: landscape) {
+  .showcase {
+    height: 100vh; }
+  .about .about-row .image-row .big-img img {
+    width: 256px; }
+  .about .about-row .image-row .small-imgs img {
+    width: 331px; }
+  .about .about-row .image-row {
+    padding: inherit; } }
+
+@media (max-width: 568px) and (min-width: 320px) and (orientation: landscape) {
+  .showcase {
+    height: 100vh; }
+  .showcase h1 {
+    font-size: 2rem; }
+  .about .about-row .image-row {
+    grid-template-columns: 1fr; }
+  .about .about-row .image-row .big-img img {
+    width: 180%;
+    height: 273px; }
+  .about .about-row .image-row .small-imgs img {
+    width: 180%;
+    height: 187px; }
+  .about .about-row .image-row {
+    padding: inherit; } }
 
 .lifestyle {
   margin-top: 6rem; }
@@ -340,7 +399,7 @@ nav {
         height: 100%;
         width: 100%;
         background: #000;
-        opacity: .6; }
+        opacity: .4; }
       .lifestyle .content .life-img1 p {
         position: absolute;
         top: 50%;
@@ -365,7 +424,7 @@ nav {
         height: 100%;
         width: 100%;
         background: #000;
-        opacity: .7; }
+        opacity: .5; }
       .lifestyle .content .life-img2 p {
         position: absolute;
         top: 50%;
@@ -390,7 +449,7 @@ nav {
         height: 100%;
         width: 100%;
         background: #000;
-        opacity: .7; }
+        opacity: .5; }
       .lifestyle .content .life-img3 p {
         position: absolute;
         top: 50%;
@@ -415,7 +474,7 @@ nav {
         height: 100%;
         width: 100%;
         background: #000;
-        opacity: .7; }
+        opacity: .5; }
       .lifestyle .content .life-img4 p {
         position: absolute;
         top: 50%;
@@ -440,7 +499,7 @@ nav {
         height: 100%;
         width: 100%;
         background: #000;
-        opacity: .7; }
+        opacity: .6; }
       .lifestyle .content .life-img5 p {
         position: absolute;
         top: 50%;
@@ -465,7 +524,7 @@ nav {
         height: 100%;
         width: 100%;
         background: #000;
-        opacity: .7; }
+        opacity: .6; }
       .lifestyle .content .life-img6 p {
         position: absolute;
         top: 50%;
@@ -566,6 +625,14 @@ button.submit {
   .newsletter .input i {
     padding: .5rem; } }
 
+@media (max-width: 812px) and (min-width: 375px) and (orientation: landscape) {
+  .newsletter .input input {
+    width: 86%; } }
+
+@media (max-width: 736px) and (min-width: 414px) and (orientation: landscape) {
+  .newsletter .input input {
+    width: 84%; } }
+
 .footer {
   background: #081838;
   color: #fff;
@@ -589,7 +656,8 @@ button.submit {
     .footer .container .contact p {
       margin-bottom: 1rem; }
     .footer .container .services {
-      line-height: 3; }
+      line-height: 2;
+      margin-top: -.3rem; }
       .footer .container .services h4 {
         margin-bottom: 0;
         font-size: 1.1rem; }

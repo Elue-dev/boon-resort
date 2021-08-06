@@ -97,4 +97,16 @@ button.submit{
     }
 }
 
+@media (max-width:812px) and (min-width:375px) and (orientation: landscape){
+    .newsletter .input input {
+        width: 86%;
+    }
+}
+
+@media (max-width:736px) and (min-width:414px) and (orientation: landscape){
+    .newsletter .input input {
+        width: 84%;
+    }
+}
+
 
