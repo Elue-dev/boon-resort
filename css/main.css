@@ -206,7 +206,7 @@ nav {
     .about .about-row .image-row {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 0;
+      gap: 0.3rem;
       padding: 1.2rem;
       max-width: 50vw; }
       .about .about-row .image-row .big-img img {
