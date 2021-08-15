@@ -264,7 +264,7 @@ nav {
     font-size: 1; }
   .about .about-row {
     grid-template-columns: 1fr;
-    gap: 2rem; }
+    gap: inherit; }
   .about .about-row .image-row {
     gap: .4rem;
     padding: 0; } }
@@ -618,7 +618,7 @@ button.submit {
 @media (max-width: 500px) {
   .newsletter {
     grid-template-columns: 1fr;
-    gap: 1.5rem; }
+    gap: 1rem; }
   .newsletter .input input {
     padding: .6rem 3.5rem;
     width: 85%; }
